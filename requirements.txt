@@ -1,0 +1,5 @@
+flask==3.0.3
+psycopg.binary==3.2.3
+openai>=1.57.0
+python-dotenv==1.0.1
+faker==25.0.0
