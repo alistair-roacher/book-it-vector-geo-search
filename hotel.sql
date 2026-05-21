@@ -10,9 +10,5 @@ CREATE TABLE IF NOT EXISTS hotel (
     name STRING NOT NULL,
     location GEOGRAPHY(POINT) NOT NULL,
     metadata JSONB NOT NULL,
-    embedding VECTOR(512),
-
-    FAMILY f_primary (id, name),
-    FAMILY f_details (location, metadata),
-    FAMILY f_vector  (embedding)
+    embedding VECTOR(512)
 );
