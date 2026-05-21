@@ -5,7 +5,9 @@ INSERT INTO hotel (name, location, metadata)
                 "number_of_reviews": 536, "parking": "Free", "price_per_night": 156, "review_score": 8.6, 
                 "room_facilities": ["Hairdryer", "Flat-screen TV", "Free toiletries", "Wi-Fi", "Electric kettle"], 
                 "hotel_facilities": ["Restaurant", "Bar", "Garden", "Pets allowed", "Non-smoking"]}'
-            ),
+            );
+
+INSERT INTO hotel (name, location, metadata)
            ('De L’Europe Amsterdam', st_geographyfromtext('POINT(4.8942865 52.3675112)'),  
                 '{"bed_types": ["Junior Suite", "Media Nanny Music Suite", "Van Gogh Museum Suite", "Salle Privée Suite"], "official_rating": 5,
                 "board_type": "Continental Breakfast included", "city": "Amsterdam", "country": "Netherlands",  
@@ -13,7 +15,9 @@ INSERT INTO hotel (name, location, metadata)
                 "room_facilities": ["Hairdryer", "TV", "Free toiletries", "Wi-Fi", "Room Service"], 
                 "hotel_facilities": ["Indoor swimming pool", "Spa and wellness centre", "Fitness centre", 
                                         "Barber/beauty shop", "Soundproof rooms", "5 restaurants"]}'
-            ),
+            );
+
+INSERT INTO hotel (name, location, metadata)
            ('Dromoland Castle Limerick', st_geographyfromtext('POINT(-8.6581638 52.6517643)'),  
                 '{"bed_types": ["Deluxe Double", "Stateroom Twin"], "official_rating": 5,
                 "board_type": "Breakfast included", "city": "Limerick", "country": "Ireland",  
