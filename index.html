@@ -379,13 +379,13 @@
         <div class="header-section">
             <div class="logo-area">
                 <img src="{{ url_for('static', filename='book-it.png') }}" alt="Book-It.com" class="logo">
-                <p class="subtitle">Find your perfect hotel using semantic and location search ...</p>
+                <p class="subtitle"></p>
             </div>
 
             <div class="location-controls">
                 <div class="location-mode">
-                    <button id="noLocationBtn" onclick="setLocationMode('none')">No Location</button>
-                    <button id="myLocationBtn" class="active" onclick="setLocationMode('current')">My Location</button>
+                    <button id="noLocationBtn" class="active" onclick="setLocationMode('none')">No Location</button>
+                    <button id="myLocationBtn" onclick="setLocationMode('current')">My Location</button>
                     <button id="mapLocationBtn" onclick="setLocationMode('map')">Pick from Map</button>
                     <button id="presetLocationBtn" onclick="setLocationMode('preset')">Preset Location</button>
                 </div>
@@ -449,14 +449,14 @@
         let userLocation = null;
         let mapPickerLocation = null;
         let presetLocation = null;
-        let locationMode = 'current'; // 'none', 'current', 'map', 'preset'
+        let locationMode = 'none'; // 'none', 'current', 'map', 'preset'
         let map = null;
         let mapMarker = null;
 
         // Initialize on page load
         window.addEventListener('load', function() {
             initializeMap();
-            getLocation();
+            updateLocationStatus();
         });
 
         function initializeMap() {
