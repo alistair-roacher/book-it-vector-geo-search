@@ -8,7 +8,7 @@ INSERT INTO hotel (name, location, metadata)
             );
 
 INSERT INTO hotel (name, location, metadata)
-           ('De L’Europe Amsterdam', st_geographyfromtext('POINT(4.8942865 52.3675112)'),  
+    VALUES ('De L’Europe Amsterdam', st_geographyfromtext('POINT(4.8942865 52.3675112)'),  
                 '{"bed_types": ["Junior Suite", "Media Nanny Music Suite", "Van Gogh Museum Suite", "Salle Privée Suite"], "official_rating": 5,
                 "board_type": "Continental Breakfast included", "city": "Amsterdam", "country": "Netherlands",  
                 "number_of_reviews": 325, "review_score": 9.3, "parking": "Paid", "price_per_night": 2450,  
@@ -18,7 +18,7 @@ INSERT INTO hotel (name, location, metadata)
             );
 
 INSERT INTO hotel (name, location, metadata)
-           ('Dromoland Castle Limerick', st_geographyfromtext('POINT(-8.6581638 52.6517643)'),  
+    VALUES ('Dromoland Castle Limerick', st_geographyfromtext('POINT(-8.6581638 52.6517643)'),  
                 '{"bed_types": ["Deluxe Double", "Stateroom Twin"], "official_rating": 5,
                 "board_type": "Breakfast included", "city": "Limerick", "country": "Ireland",  
                 "number_of_reviews": 147, "review_score": 9.4, "parking": "Free", "price_per_night": 5450,  
